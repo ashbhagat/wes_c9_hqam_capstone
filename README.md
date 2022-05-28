@@ -17,3 +17,36 @@ Please see below block diagram for HQAM:-
 # MATLAB Simulation 
 We take our input image and perform DCT on it to give us high priority stream and low priority stream. These streams are now passed thorugh channel encoder to create redundancies. We are using Convolution Encoder and Decoder of rate 1/3. Each channel encoded stream is separately QPSK modulated and scaled to create HQAM constellation. (Shown above)
 For simulation purpose, we have added AWGN and create a for loop to sweep through SNR from 1-20 dB. 
+
+Below are received constellation at an SNR of 10 dB and 20 dB. 
+
+<img width="393" alt="image" src="https://user-images.githubusercontent.com/92651382/170805794-4570e176-9fc8-4e39-956a-cdd42b98ab36.png">
+<img width="392" alt="image" src="https://user-images.githubusercontent.com/92651382/170805772-bd6c5f16-bf1a-42d1-8012-45cb9a896785.png">
+
+Below are the final images at the reeceiver side:-
+<img width="747" alt="image" src="https://user-images.githubusercontent.com/92651382/170805953-c6e5a4d3-bb9b-40d0-a0e2-8b7d885498e2.png">
+
+The MATLAB code is under MATLAB folder. It has a sample "Lenna" image to process through the simulation. (Size of image is 128x128).
+
+# GNU Radio - HQAM Implementation 
+
+----- Please note that you need to install UHD first, then volk, then GNU Radio and then RFNoc -------------
+
+We have uploaded a pdf document(GNURadio Dependencies) on repo to help with installation of dependencies and all. We are using standard GNU Radio version 3.8.5 which can be downloaded from gnuradio.org and refer to below link for installation instructions. 
+
+https://wiki.gnuradio.org/index.php/InstallingGR
+
+The folder structure of HQAM Project is following:-
+1. wes_c9_hqam_capstone/MATLAB
+2. wes_c9_hqam_capstone/gnu_radio_flowgraphs
+3. wes_c9_hqam_capstone/gr-
+
+
+
+
+
+
+
+
+
+
