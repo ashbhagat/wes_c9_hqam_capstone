@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1checkevm_1_1getevm" kind="class" language="C++" prot="public">
+    <compoundname>gr::checkevm::getevm</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <includes refid="getevm_8h" local="no">getevm.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1checkevm_1_1getevm_1abdc7490c06c07883def0fa6bbc61915b" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1checkevm_1_1getevm" kindref="compound">getevm</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;getevm&gt; gr::checkevm::getevm::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bhagat/gr-checkevm/include/checkevm/getevm.h" line="38" column="33" bodyfile="/home/bhagat/gr-checkevm/include/checkevm/getevm.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1checkevm_1_1getevm_1ad6f7ed60451e72f039953e32b44b1bce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1checkevm_1_1getevm_1abdc7490c06c07883def0fa6bbc61915b" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::checkevm::getevm::make</definition>
+        <argsstring>(float max_evm)</argsstring>
+        <name>make</name>
+        <param>
+          <type>float</type>
+          <declname>max_evm</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1checkevm_1_1getevm" kindref="compound">checkevm::getevm</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1checkevm_1_1getevm" kindref="compound">checkevm::getevm</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1checkevm_1_1getevm_1ad6f7ed60451e72f039953e32b44b1bce" kindref="member">checkevm::getevm::make</ref> is the public interface for creating new instances. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bhagat/gr-checkevm/include/checkevm/getevm.h" line="48" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="1">
+        <label>gr::checkevm::getevm</label>
+        <link refid="classgr_1_1checkevm_1_1getevm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="1">
+        <label>gr::checkevm::getevm</label>
+        <link refid="classgr_1_1checkevm_1_1getevm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/bhagat/gr-checkevm/include/checkevm/getevm.h" line="36" column="1" bodyfile="/home/bhagat/gr-checkevm/include/checkevm/getevm.h" bodystart="35" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classgr_1_1checkevm_1_1getevm_1ad6f7ed60451e72f039953e32b44b1bce" prot="public" virt="non-virtual"><scope>gr::checkevm::getevm</scope><name>make</name></member>
+      <member refid="classgr_1_1checkevm_1_1getevm_1abdc7490c06c07883def0fa6bbc61915b" prot="public" virt="non-virtual"><scope>gr::checkevm::getevm</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

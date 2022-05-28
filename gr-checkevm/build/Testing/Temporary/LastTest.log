@@ -1,0 +1,71 @@
+Start testing: May 23 05:58 UTC
+----------------------------------------------------------
+1/1 Testing: qa_getevm
+1/1 Test: qa_getevm
+Command: "/usr/bin/sh" "/home/bhagat/gr-checkevm/build/python/qa_getevm_test.sh"
+Directory: /home/bhagat/gr-checkevm/build/python
+"qa_getevm" start time: May 23 05:58 UTC
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+((0.0432468460658841-0.0109829160911651j), (0.0253696906390455+0.00069136426725247j), (0.0524572702806811+0.0505473235294273j), (-0.0556690863898125+0.0567273053195921j), (-0.00709915341168951-0.0363518068711361j), (-0.0813816203316941-9.99752351932692e-05j), (-0.0281885441030595-0.0228338447495401j), (-0.0259665412262302+0.00942060444704033j), (-0.0198598596288435+0.0307794313363699j), (-0.0149895883809178+0.0504361556887989j), (-0.0575913592322312-0.040801557956935j), (0.00453285713215826-0.00770695281990838j), (-0.0392837311981496-0.0391699639004847j), (0.0339490479983139-0.0427146670740614j), (0.0779692830982996-0.00134745118744738j))
+(50, 51, 51, 49, 48, 48, 48, 49, 49, 49, 48, 50, 48, 50, 50)
+(49, 48, 48, 48, 51, 48, 51, 50, 50, 50, 48, 49, 48, 48, 48)
+I am here greater than threshold
+EVM is 0.409503
+hp is 2 and lp is 1
+I am here greater than threshold
+EVM is 0.429141
+hp is 3 and lp is 0
+I am here less than threshold
+EVM is 0.374381
+hp is 3 and lp is 0
+I am here less than threshold
+EVM is 0.367738
+hp is 1 and lp is 0
+I am here greater than threshold
+EVM is 0.417002
+hp is 0 and lp is 3
+I am here less than threshold
+EVM is 0.393814
+hp is 0 and lp is 0
+I am here greater than threshold
+EVM is 0.411153
+hp is 0 and lp is 3
+I am here greater than threshold
+EVM is 0.422353
+hp is 1 and lp is 2
+I am here greater than threshold
+EVM is 0.411479
+hp is 1 and lp is 2
+I am here greater than threshold
+EVM is 0.401733
+hp is 1 and lp is 2
+I am here less than threshold
+EVM is 0.377826
+hp is 0 and lp is 0
+I am here greater than threshold
+EVM is 0.438565
+hp is 2 and lp is 1
+I am here less than threshold
+EVM is 0.391738
+hp is 0 and lp is 0
+I am here less than threshold
+EVM is 0.393053
+hp is 2 and lp is 0
+I am here less than threshold
+EVM is 0.394863
+hp is 2 and lp is 0
+<end of output>
+Test time =   0.35 sec
+----------------------------------------------------------
+Test Passed.
+"qa_getevm" end time: May 23 05:58 UTC
+"qa_getevm" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 23 05:58 UTC

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="classgr_1_1fll__est_1_1my__fll" kind="class"><name>gr::fll_est::my_fll</name>
+    <member refid="classgr_1_1fll__est_1_1my__fll_1acb12eb1ac6f0eb3380f7908c848cc395" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll_1a16b1e67d19f2dd1e25ee95a1ed663158" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll_1a529c1388abfb8204d9c0b8097e57ae9f" kind="function"><name>symbols</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll_1a56e242549f4c47b05b3726879ed2fc50" kind="function"><name>set_symbols</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll_1ac500d98be0a9f751df090d4a5e407811" kind="function"><name>mark_delay</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll_1a6656c41e31ae989dcac2e58b80333306" kind="function"><name>set_mark_delay</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll_1a28cfce6b5868ebba6243844b31dc93ed" kind="function"><name>threshold</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll_1abf363461fd4da094fc1040f0e2a960a4" kind="function"><name>set_threshold</name></member>
+  </compound>
+  <compound refid="classgr_1_1fll__est_1_1my__fll__impl" kind="class"><name>gr::fll_est::my_fll_impl</name>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1a42a1d37128552ad1093ea3a4f8f54002" kind="variable"><name>d_src_id</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1a85cbc4f9303dac84d51dd3ce9872a77d" kind="variable"><name>d_symbols</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1abdc2fdff2fec730ee7762e3b9e60dd2b" kind="variable"><name>d_sps</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1a9465f172734d2e6f475af98a84693c07" kind="variable"><name>d_mark_delay</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1adcc111a44502b10707b4253eb3b4543a" kind="variable"><name>d_stashed_mark_delay</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1a97a3c9373617708fd005689fd3a1a63b" kind="variable"><name>d_thresh</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1ae3a73e9c3a68e41e2741c04c6206bc69" kind="variable"><name>d_stashed_threshold</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1a7ed04b14e56758465eddca5b2e4882f4" kind="variable"><name>d_filter</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1ae81ab93c32429548799451e2dfd79b35" kind="variable"><name>c_phase</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1a686d862bdfa93be752bebd7cbc80a953" kind="variable"><name>d_corr</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1a68130c4e23fb657a30ed11d9fc7ce19e" kind="variable"><name>d_corr_mag</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1a281b7fc0d01566398c8459f09da77754" kind="variable"><name>d_scale</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1aaae4df16adabd26a86dc667bc0aab19c" kind="variable"><name>d_pfa</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1a405ea9f8e23f26a597636a4b40c596de" kind="variable"><name>d_threshold_method</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1aca6d2cd9c8f628b0994f9b5c2863cdc1" kind="function"><name>_set_mark_delay</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1ac6ddd305e74f989f5f4750d297daa3f3" kind="function"><name>_set_threshold</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1add0df18a15f9dea2d32c02c28b545900" kind="function"><name>my_fll_impl</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1a69e8bef09ec476013d443d5389f1cb0b" kind="function"><name>~my_fll_impl</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1a9beae4e91943940c47386bce38460b58" kind="function"><name>symbols</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1a49fc1366846dbf6d5eede1c7c58979b5" kind="function"><name>set_symbols</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1af1de92dd550c97ad264840b7588c8614" kind="function"><name>mark_delay</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1a4713d5d55f95162653083d55dda13766" kind="function"><name>set_mark_delay</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1ab6a2f0604d0e4f558620b9b1ba462ebd" kind="function"><name>threshold</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1aae67af0b33c827128959016045dc614b" kind="function"><name>set_threshold</name></member>
+    <member refid="classgr_1_1fll__est_1_1my__fll__impl_1ad6f5f35a44c24f9c1f4aa4829b65298b" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1filter" kind="namespace"><name>gr::filter</name>
+  </compound>
+  <compound refid="namespacegr_1_1fll__est" kind="namespace"><name>gr::fll_est</name>
+    <member refid="namespacegr_1_1fll__est_1a4f9afa583e3a7a3afd1d23ddccc505bb" kind="enum"><name>tm_type</name></member>
+    <member refid="namespacegr_1_1fll__est_1a4f9afa583e3a7a3afd1d23ddccc505bba4ddfd77ad7b1e082a36109556878bcc4" kind="enumvalue"><name>THRESHOLD_DYNAMIC</name></member>
+    <member refid="namespacegr_1_1fll__est_1a4f9afa583e3a7a3afd1d23ddccc505bba2ac49e413ccfa36295f90f4c3100ff99" kind="enumvalue"><name>THRESHOLD_ABSOLUTE</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1ac26c54d059cd82449ae6740e46ae65aa" kind="define"><name>FLL_EST_API</name></member>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="my__fll_8h" kind="file"><name>my_fll.h</name>
+  </compound>
+  <compound refid="my__fll__impl_8h" kind="file"><name>my_fll_impl.h</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_49e56c817e5e54854c35e136979f97ca" kind="dir"><name>docs</name>
+  </compound>
+  <compound refid="dir_359d2bec989c9a8deeeb9aee335c1c76" kind="dir"><name>doxygen</name>
+  </compound>
+  <compound refid="dir_71839fbd4b7b91814cd67fff4ad17b69" kind="dir"><name>fll_est</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="dir_f2cd86917185299abf5a1f0679072f3c" kind="dir"><name>other</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

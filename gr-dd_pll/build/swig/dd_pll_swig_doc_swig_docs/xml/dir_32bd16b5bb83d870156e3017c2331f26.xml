@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_32bd16b5bb83d870156e3017c2331f26" kind="dir">
+    <compoundname>dd_pll</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="qam__pll_8h">qam_pll.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/bhagat/gr-dd_pll/include/dd_pll/"/>
+  </compounddef>
+</doxygen>

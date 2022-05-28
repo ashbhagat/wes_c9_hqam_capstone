@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_71839fbd4b7b91814cd67fff4ad17b69" kind="dir">
+    <compoundname>fll_est</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="my__fll_8h">my_fll.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/bhagat/gr-fll_est/include/fll_est/"/>
+  </compounddef>
+</doxygen>

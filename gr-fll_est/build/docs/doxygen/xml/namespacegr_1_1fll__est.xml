@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacegr_1_1fll__est" kind="namespace" language="C++">
+    <compoundname>gr::fll_est</compoundname>
+    <innerclass refid="classgr_1_1fll__est_1_1my__fll" prot="public">gr::fll_est::my_fll</innerclass>
+    <innerclass refid="classgr_1_1fll__est_1_1my__fll__impl" prot="public">gr::fll_est::my_fll_impl</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacegr_1_1fll__est_1a4f9afa583e3a7a3afd1d23ddccc505bb" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tm_type</name>
+        <enumvalue id="namespacegr_1_1fll__est_1a4f9afa583e3a7a3afd1d23ddccc505bba4ddfd77ad7b1e082a36109556878bcc4" prot="public">
+          <name>THRESHOLD_DYNAMIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1fll__est_1a4f9afa583e3a7a3afd1d23ddccc505bba2ac49e413ccfa36295f90f4c3100ff99" prot="public">
+          <name>THRESHOLD_ABSOLUTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bhagat/gr-fll_est/include/fll_est/my_fll.h" line="30" column="16" bodyfile="/home/bhagat/gr-fll_est/include/fll_est/my_fll.h" bodystart="30" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/bhagat/gr-fll_est/include/fll_est/my_fll.h" line="28" column="19"/>
+  </compounddef>
+</doxygen>

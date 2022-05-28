@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1fll__est_1_1my__fll" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gr::fll_est::my_fll</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1fll__est_1_1my__fll__impl" prot="public" virt="non-virtual">gr::fll_est::my_fll_impl</derivedcompoundref>
+    <includes refid="my__fll_8h" local="no">my_fll.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1fll__est_1_1my__fll_1acb12eb1ac6f0eb3380f7908c848cc395" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1fll__est_1_1my__fll" kindref="compound">my_fll</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;my_fll&gt; gr::fll_est::my_fll::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bhagat/gr-fll_est/include/fll_est/my_fll.h" line="44" column="33" bodyfile="/home/bhagat/gr-fll_est/include/fll_est/my_fll.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1fll__est_1_1my__fll_1a16b1e67d19f2dd1e25ee95a1ed663158" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1fll__est_1_1my__fll_1acb12eb1ac6f0eb3380f7908c848cc395" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::fll_est::my_fll::make</definition>
+        <argsstring>(const std::vector&lt; gr_complex &gt; &amp;symbols, float sps, unsigned int mark_delay, float threshold=0.9, tm_type threshold_method=THRESHOLD_ABSOLUTE)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const std::vector&lt; gr_complex &gt; &amp;</type>
+          <declname>symbols</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sps</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>mark_delay</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+          <defval>0.9</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1_1fll__est_1a4f9afa583e3a7a3afd1d23ddccc505bb" kindref="member">tm_type</ref></type>
+          <declname>threshold_method</declname>
+          <defval><ref refid="namespacegr_1_1fll__est_1a4f9afa583e3a7a3afd1d23ddccc505bba2ac49e413ccfa36295f90f4c3100ff99" kindref="member">THRESHOLD_ABSOLUTE</ref></defval>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1fll__est_1_1my__fll" kindref="compound">fll_est::my_fll</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1fll__est_1_1my__fll" kindref="compound">fll_est::my_fll</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1fll__est_1_1my__fll_1a16b1e67d19f2dd1e25ee95a1ed663158" kindref="member">fll_est::my_fll::make</ref> is the public interface for creating new instances. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bhagat/gr-fll_est/include/fll_est/my_fll.h" line="54" column="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1fll__est_1_1my__fll_1a529c1388abfb8204d9c0b8097e57ae9f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>virtual std::vector&lt;gr_complex&gt; gr::fll_est::my_fll::symbols</definition>
+        <argsstring>() const =0</argsstring>
+        <name>symbols</name>
+        <reimplementedby refid="classgr_1_1fll__est_1_1my__fll__impl_1a9beae4e91943940c47386bce38460b58">symbols</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bhagat/gr-fll_est/include/fll_est/my_fll.h" line="60" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fll__est_1_1my__fll_1a56e242549f4c47b05b3726879ed2fc50" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::fll_est::my_fll::set_symbols</definition>
+        <argsstring>(const std::vector&lt; gr_complex &gt; &amp;symbols)=0</argsstring>
+        <name>set_symbols</name>
+        <reimplementedby refid="classgr_1_1fll__est_1_1my__fll__impl_1a49fc1366846dbf6d5eede1c7c58979b5">set_symbols</reimplementedby>
+        <param>
+          <type>const std::vector&lt; gr_complex &gt; &amp;</type>
+          <declname>symbols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bhagat/gr-fll_est/include/fll_est/my_fll.h" line="61" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fll__est_1_1my__fll_1ac500d98be0a9f751df090d4a5e407811" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned int</type>
+        <definition>virtual unsigned int gr::fll_est::my_fll::mark_delay</definition>
+        <argsstring>() const =0</argsstring>
+        <name>mark_delay</name>
+        <reimplementedby refid="classgr_1_1fll__est_1_1my__fll__impl_1af1de92dd550c97ad264840b7588c8614">mark_delay</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bhagat/gr-fll_est/include/fll_est/my_fll.h" line="63" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fll__est_1_1my__fll_1a6656c41e31ae989dcac2e58b80333306" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::fll_est::my_fll::set_mark_delay</definition>
+        <argsstring>(unsigned int mark_delay)=0</argsstring>
+        <name>set_mark_delay</name>
+        <reimplementedby refid="classgr_1_1fll__est_1_1my__fll__impl_1a4713d5d55f95162653083d55dda13766">set_mark_delay</reimplementedby>
+        <param>
+          <type>unsigned int</type>
+          <declname>mark_delay</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bhagat/gr-fll_est/include/fll_est/my_fll.h" line="64" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fll__est_1_1my__fll_1a28cfce6b5868ebba6243844b31dc93ed" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float gr::fll_est::my_fll::threshold</definition>
+        <argsstring>() const =0</argsstring>
+        <name>threshold</name>
+        <reimplementedby refid="classgr_1_1fll__est_1_1my__fll__impl_1ab6a2f0604d0e4f558620b9b1ba462ebd">threshold</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bhagat/gr-fll_est/include/fll_est/my_fll.h" line="66" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1fll__est_1_1my__fll_1abf363461fd4da094fc1040f0e2a960a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::fll_est::my_fll::set_threshold</definition>
+        <argsstring>(float threshold)=0</argsstring>
+        <name>set_threshold</name>
+        <reimplementedby refid="classgr_1_1fll__est_1_1my__fll__impl_1aae67af0b33c827128959016045dc614b">set_threshold</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bhagat/gr-fll_est/include/fll_est/my_fll.h" line="67" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="3">
+        <label>gr::fll_est::my_fll_impl</label>
+        <link refid="classgr_1_1fll__est_1_1my__fll__impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gr::fll_est::my_fll</label>
+        <link refid="classgr_1_1fll__est_1_1my__fll"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="1">
+        <label>gr::fll_est::my_fll</label>
+        <link refid="classgr_1_1fll__est_1_1my__fll"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/bhagat/gr-fll_est/include/fll_est/my_fll.h" line="42" column="1" bodyfile="/home/bhagat/gr-fll_est/include/fll_est/my_fll.h" bodystart="41" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classgr_1_1fll__est_1_1my__fll_1a16b1e67d19f2dd1e25ee95a1ed663158" prot="public" virt="non-virtual"><scope>gr::fll_est::my_fll</scope><name>make</name></member>
+      <member refid="classgr_1_1fll__est_1_1my__fll_1ac500d98be0a9f751df090d4a5e407811" prot="public" virt="pure-virtual"><scope>gr::fll_est::my_fll</scope><name>mark_delay</name></member>
+      <member refid="classgr_1_1fll__est_1_1my__fll_1a6656c41e31ae989dcac2e58b80333306" prot="public" virt="pure-virtual"><scope>gr::fll_est::my_fll</scope><name>set_mark_delay</name></member>
+      <member refid="classgr_1_1fll__est_1_1my__fll_1a56e242549f4c47b05b3726879ed2fc50" prot="public" virt="pure-virtual"><scope>gr::fll_est::my_fll</scope><name>set_symbols</name></member>
+      <member refid="classgr_1_1fll__est_1_1my__fll_1abf363461fd4da094fc1040f0e2a960a4" prot="public" virt="pure-virtual"><scope>gr::fll_est::my_fll</scope><name>set_threshold</name></member>
+      <member refid="classgr_1_1fll__est_1_1my__fll_1acb12eb1ac6f0eb3380f7908c848cc395" prot="public" virt="non-virtual"><scope>gr::fll_est::my_fll</scope><name>sptr</name></member>
+      <member refid="classgr_1_1fll__est_1_1my__fll_1a529c1388abfb8204d9c0b8097e57ae9f" prot="public" virt="pure-virtual"><scope>gr::fll_est::my_fll</scope><name>symbols</name></member>
+      <member refid="classgr_1_1fll__est_1_1my__fll_1a28cfce6b5868ebba6243844b31dc93ed" prot="public" virt="pure-virtual"><scope>gr::fll_est::my_fll</scope><name>threshold</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
