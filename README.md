@@ -39,8 +39,11 @@ https://wiki.gnuradio.org/index.php/InstallingGR
 The folder structure of HQAM Project is following:-
 1. wes_c9_hqam_capstone/MATLAB
 2. wes_c9_hqam_capstone/gnu_radio_flowgraphs
-3. wes_c9_hqam_capstone/gr-
+3. wes_c9_hqam_capstone/gr-checkevm
+4. wes_c9_hqam_capstone/gr-dd_pll
+5. wes_c9_hqam_capstone/gr_fll_est
 
+gnu_radio_flowgraphs have all the GRC files which has HQAM Tx and Rx design. 
 
 
 
