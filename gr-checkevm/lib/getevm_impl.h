@@ -32,7 +32,7 @@ namespace gr {
       // Nothing to declare in this block.
       float d_max_evm;
       float err_vec;
-      char hp,lp;
+      unsigned char hp,lp;
       
      float check_evm(const gr_complex &s);
 

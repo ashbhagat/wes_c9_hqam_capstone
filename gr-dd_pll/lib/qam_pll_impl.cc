@@ -207,11 +207,12 @@ namespace gr {
     	
     	f_int_out = f_int_out_last + Ka*(T/2)*(f_in + f_in_last); 
     	f_out = f_in + f_int_out;
-    	/*cout << "the f_int_out is " << f_int_out << endl;
-    	cout << "the f_out is " << f_out << endl;
-    	cout << "the f_int_out_last is " << f_int_out_last << endl;
-    	cout << "the f_in_last is " << f_in_last << endl;
-    	*/
+    	
+    	//cout << "the f_int_out is " << f_int_out << endl;
+    	//cout << "the f_out (vco_in) is " << f_out << endl;
+    	//cout << "the f_int_out_last is " << f_int_out_last << endl;
+    	//cout << "the f_in_last is " << f_in_last << endl;
+    	
     	
     	// Output of loop filter is last value pulse a discrete form of the 
     	// integration of the input

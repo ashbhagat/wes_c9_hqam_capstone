@@ -216,11 +216,10 @@ void my_fll_impl::set_threshold(float threshold)
 
 
 
-    int
-    my_fll_impl::work(int noutput_items,
+int my_fll_impl::work(int noutput_items,
         gr_vector_const_void_star &input_items,
         gr_vector_void_star &output_items)
-    {
+{
       gr::thread::scoped_lock lock(d_setlock);
 
     const gr_complex* in = (gr_complex*)input_items[0];
@@ -387,13 +386,8 @@ void my_fll_impl::set_threshold(float threshold)
                          pmt::intern("amp_est"),
                          pmt::from_double(d_scale),
                          d_src_id);
-        }
+        }               
         
-        
-        
-        out[i] = in[i]*gr_expj(-c_phase);
-	
-
         // Skip ahead to the next potential symbol peak
         // (for non-offset/interleaved symbols)
         i += isps;
@@ -404,12 +398,15 @@ void my_fll_impl::set_threshold(float threshold)
     //               pmt::intern("ce_eow"), pmt::from_uint64(noutput_items),
     //               d_src_id);
 
-    //gr_complex temp = in*gr_expj(-c_phase);
 
     // Delay the output by our correlation filter length so we can
     // tag backwards in time
-    //memcpy(out, &in[0], sizeof(gr_complex) * noutput_items);
-    //memcpy(out, &temp, sizeof(gr_complex) * noutput_items);
+    memcpy(out, &in[0], sizeof(gr_complex) * noutput_items);
+
+    // [JC] apply phase to every sample in this batch
+    //std::cout << "Applying c_phase == " << c_phase << " correction to " << noutput_items << " samples" << std::endl;
+    for (int j = 0; j < noutput_items; j++)
+        out[j] = out[j]*gr_expj(-c_phase);
 
     return noutput_items;
     }

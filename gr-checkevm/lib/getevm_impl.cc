@@ -52,11 +52,11 @@ namespace gr {
     getevm_impl::getevm_impl(float max_evm)
       : gr::sync_block("getevm",
               gr::io_signature::make(1, 1, sizeof(gr_complex)),
-              gr::io_signature::make(2, 2, sizeof(char))),
+              gr::io_signature::make(2, 2, sizeof(unsigned char))),
               d_max_evm(max_evm),
               err_vec(0),
-              hp('0'),
-              lp('0')
+              hp(0),
+              lp(0)
               
     {
     char hp,lp;
@@ -74,7 +74,7 @@ namespace gr {
     	const float pi = 3.1416;
     	const float a = 1/sqrt(10);
     	const float b = 3/sqrt(10);
-    	const float d_bound = 2./sqrt(10.);
+    	const float d_bound = 2/sqrt(10.);
     	gr_complex s_est;
     	float err_vec;
     	
@@ -84,68 +84,68 @@ namespace gr {
     	//estimate the symbol based on input value 
     	if ((s.real()>=0)&&(s.imag()>=0)) //Top right quadrant 
     	{
-    		hp = '3';
+    		hp = 0;
     		if ((s.real()>=d_bound)&&(s.imag()>=d_bound))  // Top right subquadrant
     		{
-    			s_est.real(b);s_est.imag(b);lp = '3';
+    			s_est.real(b);s_est.imag(b);lp = 0;
     		} else if ((s.real()<d_bound)&&(s.imag()>=d_bound))  // top left subquadrant
     		{
-    			s_est.real(a);s_est.imag(b);lp = '1';
+    			s_est.real(a);s_est.imag(b);lp = 1;
     		} else if ((s.real()<d_bound)&&(s.imag()<d_bound))   // bottom left subquadrant 
     		{
-    			s_est.real(a);s_est.imag(a);lp = '0';
+    			s_est.real(a);s_est.imag(a);lp = 3;
     		} else if ((s.real()>=d_bound)&&(s.imag()<d_bound))  // bottom right subquadrant
     		{
-    			s_est.real(b);s_est.imag(a);lp = '2';
+    			s_est.real(b);s_est.imag(a);lp = 2;
     		}
     		
     	} else if ((s.real()<0)&&(s.imag()>=0)) //top left quadrant 
     	{
-    		hp = '1';
+    		hp = 1;
     		if ((s.real() >= -d_bound)&&(s.imag()>=d_bound))  // Top right subquadrant
     		{
-    			s_est.real(-a);s_est.imag(b);lp = '3'; 
+    			s_est.real(-a);s_est.imag(b);lp = 0; 
     		} else if ((s.real() < -d_bound)&&(s.imag()>=d_bound))  // Top left subquadrant
     		{
-    			s_est.real(-b);s_est.imag(b);lp = '1';
+    			s_est.real(-b);s_est.imag(b);lp = 1;
     		} else if ((s.real()< -d_bound)&&(s.imag()<d_bound))   // Bottom left subquadrant 
     		{
-    			s_est.real(-b);s_est.imag(a);lp = '0';
+    			s_est.real(-b);s_est.imag(a);lp = 3;
     		} else if ((s.real()>= -d_bound)&&(s.imag()<d_bound))  // Bottom right subquadrant
     		{
-    			s_est.real(-a);s_est.imag(a);lp = '2';
+    			s_est.real(-a);s_est.imag(a);lp = 2;
     		}
     	} else if ((s.real()<0)&&(s.imag()<0))  //bottom left quadrant 
     	{
-    		hp = '0';
+    		hp = 3;
     		if ((s.real() >= -d_bound)&&(s.imag()>= -d_bound))  // top right subquadrant
     		{
-    			s_est.real(-a);s_est.imag(-a);lp = '3';
+    			s_est.real(-a);s_est.imag(-a);lp = 0;
     		} else if ((s.real() < -d_bound)&&(s.imag()>= -d_bound))  // top left subquadrant
     		{
-    			s_est.real(-b);s_est.imag(-a);lp = '1';
+    			s_est.real(-b);s_est.imag(-a);lp = 1;
     		} else if ((s.real()< -d_bound)&&(s.imag()< -d_bound))   // bottom left subquadrant 
     		{
-    			s_est.real(-b);s_est.imag(-b);lp = '0';
+    			s_est.real(-b);s_est.imag(-b);lp = 3;
     		} else if ((s.real()>= -d_bound)&&(s.imag()< -d_bound))  // bottom right subquadrant
     		{
-    			s_est.real(-a);s_est.imag(-b);lp = '2';
+    			s_est.real(-a);s_est.imag(-b);lp = 2;
     		}
     	} else if ((s.real()>=0)&&(s.imag()<0))  //bottom right quadrant 
     	{
-    		hp = '2';
+    		hp = 2;
     		if ((s.real() >= d_bound)&&(s.imag()>= -d_bound))  // top right subquadrant
     		{
-    			s_est.real(b);s_est.imag(-a);lp = '3';
+    			s_est.real(b);s_est.imag(-a);lp = 0;
     		} else if ((s.real() < d_bound)&&(s.imag()>= -d_bound))  // top left subquadrant
     		{
-    			s_est.real(a);s_est.imag(-a);lp = '1';
+    			s_est.real(a);s_est.imag(-a);lp = 1;
     		} else if ((s.real()< d_bound)&&(s.imag()< -d_bound))   // bottom left subquadrant 
     		{
-    			s_est.real(a);s_est.imag(-b);lp = '0';
+    			s_est.real(a);s_est.imag(-b);lp = 3;
     		} else if ((s.real()>= d_bound)&&(s.imag()< -d_bound))  // bottom right subquadrant
     		{
-    			s_est.real(b);s_est.imag(-b);lp = '2';
+    			s_est.real(b);s_est.imag(-b);lp = 2;
     		}
     	}
     	
@@ -163,13 +163,13 @@ namespace gr {
         gr_vector_void_star &output_items)
     {
       const gr_complex *in = (const gr_complex *) input_items[0];
-      char *out_hp = (char *) output_items[0];
-      char *out_lp = (char *) output_items[1];
+      unsigned char *out_hp = (unsigned char *) output_items[0];
+      unsigned char *out_lp = (unsigned char *) output_items[1];
       float m_evm = 0.0;
       const float pi = 3.1416;
       const float a = 1/sqrt(10);
       const float b = 3/sqrt(10);
-      const float d_bound = 2./sqrt(10.);
+      const float d_bound = 2/sqrt(10.);
       
       
 
@@ -189,7 +189,7 @@ namespace gr {
       	{
       		//printf("I am here less than threshold\n");
       		out_hp[i] = hp;
-      		out_lp[i] = '0';
+      		out_lp[i] = 0;
       	}
       	//printf("EVM is %f\n", m_evm);
     	//printf("hp is %c and lp is %c\n", out_hp[i],out_lp[i]);
