@@ -41,10 +41,26 @@ The folder structure of HQAM Project is following:-
 2. wes_c9_hqam_capstone/gnu_radio_flowgraphs
 3. wes_c9_hqam_capstone/gr-checkevm
 4. wes_c9_hqam_capstone/gr-dd_pll
-5. wes_c9_hqam_capstone/gr_fll_est
+5. wes_c9_hqam_capstone/gr-fll_est
+6. wes_c9_hqam_capstone/gr-dct
+7. wes_c9_hqam_capstone/gr-hqam
+8. wes_c9_hqam_capstone/gr-coarsefreq
+9. wes_c9_hqam_capstone/rfnoc-capstone
 
 gnu_radio_flowgraphs have all the GRC files which has HQAM Tx and Rx design. 
+There are a lot of GRCs which we created and used during on testing to validate each functionality. We tried to name GRCs for testing purpose as *_test_*.grc to keep it clear. To run the project please follow the instructions after installing everything above. 
 
+1. download all the OOT modules and build them. 
+  - To build create a build directory inside the gr-* folder using "mkdir build".
+  - cd build
+  - cmake ../
+  - make 
+  - sudo make install 
+  - sudo ldconfig 
+2. now copy all the GRCs in a folder(any folder)
+3. Go to Terminal and type gnuradio-companion 
+4. click open tab and import GRCs. 
+5. You need to run all the hierarchical blocks and reload the main GRCs before you can run the test. 
 
 
 
