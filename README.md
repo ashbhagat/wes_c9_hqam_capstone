@@ -7,8 +7,8 @@ This is where Hierarchical Modulation comes into picture. The concept is to divi
 
 For our project we modulated our HP(high priority)/Base Layer data with QPSK (Gray Coded) and we modulated our LP(Low Priority)/Enhancement Layer data with QPSK around each HP constellation points. Please see below diagram.   
 
+<img width="325" alt="image" src="https://user-images.githubusercontent.com/92651382/172268700-7ef25cd0-016e-4404-a8cf-20ebea967e06.png">
 
-<img width="1101" alt="image" src="https://user-images.githubusercontent.com/92651382/170805226-94b5fece-5ebb-4523-afcf-9ea01e304c07.png">
 
 Please see below block diagram for HQAM:-
 
